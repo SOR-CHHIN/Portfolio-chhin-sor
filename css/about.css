@@ -7,7 +7,7 @@ body {
     background-color: #1a1e2d;
 }
 .navbar-brand, .nav-link {
-    color: #00d4b5 !important;
+    color: #ffffff !important;
 }
 .nav-link:hover {
     color: #ffffff !important;
@@ -133,7 +133,7 @@ body {
     overflow: hidden;
 }
 .about-section h2 {
-    background: linear-gradient(to right, #a100f2, #6f00ea);
+    background: linear-gradient(to right, #0049f2, #1a3be2);
     -webkit-background-clip: text;
     color: transparent;
     font-size: 2.5rem;
@@ -168,7 +168,7 @@ body {
     margin-top: 20px;
 }
 .about-details h3 {
-    color: #a100f2;
+    color: #0049f2;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
@@ -180,11 +180,11 @@ body {
     margin-bottom: 10px;
 }
 .about-details ul li i {
-    color: #a100f2;
+    color: #0049f2;
     margin-right: 10px;
 }
 .skill-box {
-    background: linear-gradient(to bottom, #a100f2, #6f00ea);
+    background: linear-gradient(to bottom,#0049f2, #6f00ea);
     border-radius: 20px;
     padding: 20px;
     margin-top: 20px;
@@ -207,4 +207,8 @@ body {
     border-radius: 15px;
     margin: 5px;
     font-size: 0.9rem;
+}
+.linkedin,.email{
+    text-decoration: none;
+    color: #ffffff;
 }

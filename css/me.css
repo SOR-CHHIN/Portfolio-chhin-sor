@@ -2,33 +2,51 @@ body {
     background-color: #1a1e2d;
     color: #ffffff;
     font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
+
 .navbar {
     background-color: #1a1e2d;
 }
-.navbar-brand, .nav-link {
-    color: #00d4b5 !important;
+
+.navbar-brand,
+.nav-link {
+    color: #ffffff !important;
 }
+
 .nav-link:hover {
     color: #ffffff !important;
 }
+
 .hero-section {
     min-height: 80vh;
     display: flex;
     align-items: center;
     padding: 50px 0;
+    background-color: #1a1e2d; /* Static background color */
 }
+
 .hero-text h1 {
     font-size: 3rem;
     font-weight: bold;
 }
+
 .hero-text h1 span {
     color: #00d4b5;
 }
+
 .hero-text h3 {
     color: #00d4b5;
     font-size: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid #00d4b5;
+    animation: typing 4s steps(30, end) infinite, blink 0.75s step-end infinite;
 }
+
 .btn-talk {
     background-color: #00d4b5;
     color: #1a1e2d;
@@ -36,92 +54,138 @@ body {
     padding: 10px 30px;
     border-radius: 50px;
 }
+
 .btn-talk:hover {
     background-color: #ffffff;
     color: #1a1e2d;
 }
+
 .social-icons a {
     color: #00d4b5;
     margin: 0 10px;
     font-size: 1.5rem;
 }
+
 .service-card {
     background-color: #252a3f;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
 }
+
 .service-card i {
     color: #00d4b5;
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
+
 .service-card h5 {
     color: #00d4b5;
 }
+
 .modal-content {
     background-color: #252a3f;
     color: #ffffff;
 }
-.modal-header, .modal-footer {
+
+.modal-header,
+.modal-footer {
     border-color: #00d4b5;
 }
+
 .form-control {
     background-color: #1a1e2d;
     color: #ffffff;
     border-color: #00d4b5;
 }
+
 /* Recent Projects Section */
 .projects-section {
     background-color: #1a1e2d;
     padding: 50px 0;
 }
+
 .projects-section h2 {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
 }
+
 .carousel-item img {
     max-height: 500px;
     object-fit: contain;
     margin: 0 auto;
 }
-.carousel-control-prev, .carousel-control-next {
+
+.carousel-control-prev,
+.carousel-control-next {
     width: 5%;
 }
-.carousel-control-prev-icon, .carousel-control-next-icon {
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     background-color: #00d4b5;
     border-radius: 50%;
 }
+
 .project-grid {
     margin-top: 50px;
 }
+
 .project-card {
     background-color: #252a3f;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
 }
+
 .project-card img {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
+
 .project-card p {
     margin: 10px 0;
     color: #00d4b5;
 }
-.btn-view-all, .btn-learn-more {
+
+.btn-view-all,
+.btn-learn-more {
     border-radius: 50px;
     padding: 10px 30px;
     margin: 0 10px;
 }
+
 .btn-view-all {
     background-color: #1a1e2d;
     border: 1px solid #00d4b5;
     color: #00d4b5;
 }
+
 .btn-learn-more {
     background-color: #00d4b5;
     color: #1a1e2d;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #00d4b5;
+    }
 }
